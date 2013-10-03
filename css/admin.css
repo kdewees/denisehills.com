@@ -1,0 +1,301 @@
+/* colors */
+#WHITE,
+    #header-nav a,
+    #nav a,
+.white {
+    color: white;
+}
+#WHITE_BG,
+    body,
+    #page,
+    table,
+.white_bg {
+    background-color: white;
+}
+#LTBLUE,
+    #nav,
+.ltblue {
+    color: #acd1f2;
+}
+#LTBLUE_BG,
+    body,
+.ltblue_bg {
+    background-color: #acd1f2;
+}
+#TAN,
+.tan {
+    color: #d98943;
+}
+#TAN_BG,
+    #header-nav,
+.tan_bg {
+    background-color: #d98943;
+}
+#BROWN,
+.brown {
+    color: #a65d33;
+}
+#BROWN_BG,
+.brown_bg {
+    background-color: #a65d33;
+}
+#MAROON,
+    #header-nav a:hover,
+.maroon {
+    color: #a61b0f;
+}
+#MAROON_BG,
+    #nav,
+    input.submit,
+.maroon_bg {
+    background-color: #a61b0f;
+}
+#DKBROWN,
+#home1,
+.dk_brown {
+    color: #400b06;
+}
+#DKBROWN_BG,
+.dkbrown_bg {
+    background-color: #400b06;
+}
+#BEIGE,
+.beige {
+    color: #f5ebe2;
+}
+#BEIGE_BG,
+    .even,
+.beige_bg {
+    background-color: #f5ebe2;
+}
+#LT_LTBLUE_BG,
+    .odd,
+.lt_ltblue_bg {
+    background-color: #cbe2f7;
+}
+
+/* page sections */
+body {
+	font-family: Verdana, Arial, sans-serif;
+}
+#header {
+    background: url(/images/admin/header.png);
+    height: 145px;
+	border-bottom: 10px solid #400b06;
+}
+#header-nav {
+	height: 20px;
+	color: white;
+	text-align: center;
+    border-bottom: 10px solid #400b06;
+    padding: 10px 0;
+}
+#header-nav a {
+    padding: 20px;
+    text-decoration: none;
+}
+#page {
+	min-height: 450px;
+}
+#nav {
+}
+	#nav h2 {
+		text-align: center;
+	}
+	#nav h3 {
+		text-align: left;
+	}
+	#nav ul {
+		list-style-type: none;
+	}
+		#nav ul li {
+			font-weight: bold;
+		}
+		#nav ul ul {
+			list-style-type: disc;
+		}
+			#nav ul ul li {
+				font-weight: normal;
+			}
+	#nav ul a {
+		text-decoration: none;
+	}
+		#nav ul a:hover {
+			text-decoration: underline;
+		}
+
+/* =========================================== style forms */
+form {
+	width: 98%;
+	background-color: white;
+}
+input, textarea, select {
+	display: block;
+	float: left;
+	clear: right;
+	margin: 5px;
+}
+	input.submit {
+		width: auto;
+		float: right;
+		clear: none;
+		margin-right: 10px;
+		color: white;
+		font-weight: bold;
+		font-size: 14pt;
+	}
+label {
+	display: block;
+	float: left;
+	width: 100px;
+	margin: 5px;
+	text-align: right;
+	font-weight: bold;
+}
+fieldset {
+	padding: 10px;
+	border: 3px solid #acd1f2;
+}
+	fieldset fieldset {
+		padding: 5px;
+		border: 1px dashed #a1a1a1;
+		margin-bottom: 5px;
+	}
+legend {
+	font-weight: bold;
+	font-size: 16pt;
+	margin-left: 10px;
+	text-align: left;
+    color: #a61b0f;
+}
+	fieldset fieldset legend {
+		font-weight: normal;
+		font-size: 100%;
+		margin-left: 10px;
+		text-align: left;
+	}
+.form-description {
+	float: left;
+	clear: right;
+	min-width: 500px;
+	color: black;
+	text-align: left;
+}
+
+/* =========================================== style tables */
+table {
+	width: 98%;
+	border: 3px solid #112349;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 2px;
+	border: 1px solid #112349;
+}
+th {
+	font-weight: bold;
+	text-align: center;
+    vertical-align: middle;
+}
+th a {
+    text-decoration: none;
+    color: #112349;
+}
+th a:hover {
+    color: #be2125;
+}
+tr.even td {
+}
+td img, th img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+td.actions, th.actions {
+	width: 100px;
+    min-width: 100px;
+	text-align: center;
+}
+td.actions input {
+    /*width: 26px;*/
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+td th {
+    width: auto;
+}
+td.id, th.id {
+	/*width: 50px;*/
+}
+td a {
+	text-decoration: none;
+	color: black;
+}
+td a:hover {
+    color: #be2125;
+    text-decoration: underline;
+}
+
+/* style certain table header cells...for filtering jquery program  */
+
+input#_filterText1 {
+    width: 30px;
+}
+
+/* =========================================== incidental classes */
+.padding_20 {
+	padding: 20px;
+}
+.padding_10 {
+	padding: 10px;
+}
+.padding_5 {
+	padding: 5px;
+}
+.center {
+	text-align: center;
+}
+.error {
+	color: #be2125;
+	font-weight: bold;
+}
+
+/* to make the div where the table is horizontally scrollable: */
+
+div#page > div.grid_9 > div.padding_5 {
+    overflow: scroll;
+}
+
+#LTRED,
+    .do_not_change,
+    .alert,
+.ltred {
+    background-color: #f69679;
+}
+
+.alert {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+}
+.alert-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+}
+.alert-close:hover {
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}

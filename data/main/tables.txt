@@ -1,0 +1,181 @@
+$tables = array(
+	array(
+		'name' => 'pages',
+		'itemname' => 'Page',
+		'fields' => array(
+			array(
+				'name' => 'title'),
+			array(
+				'name' => 'content',
+				'type' => 'textarea_editor',
+				'list' => FALSE),
+			array(
+				'name' => 'description',
+				'type' => 'textarea',
+				'list' => FALSE),
+			array(
+				'name' => 'form_id',
+				'type' => 'select',
+				'select_table' => 'forms',
+				'select_field' => 'name',
+				'list' => FALSE,
+				'description' => 'You can append a form to the end of this page by selecting it here.'),
+			array(
+				'name' => 'menu_id',
+				'type' => 'select',
+				'select_table' => 'menus',
+				'select_field' => 'name',
+				'list' => FALSE,
+				'description' => 'You can append a link menu to the end of this page by selecting it here.'),
+			array(
+				'name' => 'image',
+				'type' => 'image',
+				'
+				)),
+	array(
+		'name' => 'pageparts',
+		'itemname' => 'Page part',
+		'fields' => array(
+			array(
+				'name' => 'name'),
+			array(
+				'name' => 'description',
+				'list' => FALSE),
+			array(
+				'name' => 'content',
+				'type' => 'textarea_editor',
+				'list' => FALSE))),
+	array(
+		'name' => 'menus',
+		'itemname' => 'Menu',
+		'fields' => array(
+			array(
+				'name' => 'name'),
+			array(
+				'name' => 'description',
+				'type=' => 'textarea'))),
+	array(
+		'name' => 'links',
+		'itemname' => 'Link',
+		'fields' => array(
+			array(
+				'name' => 'menu_id',
+				'type' => 'select',
+				'select_table' => 'menus',
+				'select_field' => 'name',
+				'description' => 'where this link will appear - default is header'),
+			array(
+				'name' => 'text',
+				'description' => 'the text the user will click on to follow the link'),
+			array(
+				'name' => 'url',
+				'description' => 'if this is an offsite link, include full link to site - begin with http://',
+				'list' => FALSE),
+			array(
+				'name' => 'page_id',
+				'type' => 'select',
+				'select_table' => 'pages',
+				'select_field' => 'title',
+				'description' => 'if this is an insite link, select the page you want to link to from the dropdown list',
+				'list' => FALSE),
+			array(
+				'name' => 'image',
+				'description' => 'if this link should be an image instead of text, include the image name.',
+				'list' => FALSE),
+			array(
+				'name' => 'ordinal',
+				'description' => 'the order this link should appear in its menu - 1 is first (default is to order by ID)'))),
+	array(
+		'name' => 'forms',
+		'itemname' => 'Form',
+		'fields' => array(
+			array(
+				'name' => 'name'),
+			array(
+				'name' => 'email',
+				'description' => 'what email address should the form results be mailed to?'),
+			array(
+				'name' => 'submit_button_text',
+				'description' => 'the text that will be displayed on the button the user will click to submit the form',
+				'list' => FALSE),
+			array(
+				'name' => 'thank_you_page_id',
+				'description' => 'select the page that the user will be shown after submitting the form.',
+				'type' => 'select',
+				'select_table' => 'pages',
+				'select_field' => 'title',
+				'list' => FALSE),
+			array(
+				'name' => 'description',
+				'type' => 'textarea',
+				'list' => FALSE))),
+	array(
+		'name' => 'form_fields',
+		'itemname' => 'Form Field',
+		'fields' => array(
+			array(
+				'name' => 'form_id',
+				'type' => 'select',
+				'select_table' => 'forms',
+				'select_field' => 'name'),
+			array(
+				'name' => 'label'),
+			array(
+				'name' => 'type',
+				'type' => 'enum',
+				'list' => FALSE),
+			array(
+				'name' => 'instructions',
+				'type' => 'textarea',
+				'list' => FALSE),
+			array(
+				'name' => 'options',
+				'description' => 'if this will be a select, checkbox, or radio field, enter a comma delimited list of options',
+				'list' => FALSE))),
+	array(
+		'name' => 'users',
+		'itemname' => 'User',
+		'fields' => array(
+			array(
+				'name' => 'first_name'),
+			array(
+				'name' => 'last_name'),
+			array(
+				'name' => 'email',
+				'list' => FALSE),
+			array(
+				'name' => 'username'),
+			array(
+				'name' => 'password',
+				'type' => 'password',
+				'list' => FALSE))),
+	array(
+    		'name' => 'slides',
+    		'itemname' => 'Slide',
+    		'fields' => array(
+    			array(
+    				'name' => 'name',
+    				'description' => 'the name of the slide - for your own reference'),
+    			array(
+    				'name' => 'image',
+    				'type' => 'image',
+    				'list' => FALSE,
+    				'description' => 'upload the image here...it should be 955px wide and 411px high'),
+    			array(
+    				'name' => 'heading',
+    				'list' => FALSE,
+    				'description' => 'the larger text heading for the caption for each slide - please limit to 50 characters'),
+    			array(
+    				'name' => 'text',
+    				'type' => 'textarea',
+    				'list' => FALSE,
+    				'description' => 'the text displayed as a caption for each slide - please limit to 200 characters'),
+    			array(
+    			    'name' => 'date_start',
+    			    'type' => 'date',
+    			    'description' => 'the date that this slide should start being shown'),
+    			array(
+    			    'name' => 'date_end',
+    			    'type' => 'date',
+    			    'description' => 'the date that this slide should stop being shown'))),
+    );

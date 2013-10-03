@@ -1,0 +1,27 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+	$config['use_page_numbers'] = TRUE;
+	$config['uri_segment'] = 4;
+	$config['full_tag_open'] = "<div class='clear'></div><div class='pagination'>View More Products...&nbsp;&nbsp;";
+	$config['full_tag_close'] = "<div class='preload'><img src='/images/ui/pagination_first_page_hover.png'><img src='/images/ui/pagination_last_page_hover.png'><img src='/images/ui/pagination_left_hover.png'><img src='/images/ui/pagination_right_hover.png'></div></div><div class='clear'></div>\n";
+	$config['cur_tag_open'] = "<div class='current'>";
+	$config['cur_tag_close'] = "</div>";
+	$config['num_tag_open'] = '<div>';
+	$config['num_tag_close'] = '</div>';
+	$config['next_tag_open'] = "<div class='next'>";
+	$config['next_tag_close'] = '</div>';
+	//$config['next_link'] = "<img src='/images/ui/right_arrow.png' />";
+    $config['next_link'] = "<img src='/images/ui/blank.png'>";
+	$config['prev_tag_open'] = "<div class='prev'>";
+	$config['prev_tag_close'] = '</div>';
+	//$config['prev_link'] = "<img src='/images/ui/left_arrow.png' />";
+    $config['prev_link'] = "<img src='/images/ui/blank.png'>";
+	//$config['first_link'] = "<img src='/images/ui/pagination_first_page.png' />";
+	//$config['last_link'] = "<img src='/images/ui/pagination_last_page.png' />";
+    $config['first_link'] = "<img src='/images/ui/blank.png'>";
+    $config['last_link'] = "<img src='/images/ui/blank.png'>";
+	$config['first_tag_open'] = "<div class='first'>";
+	$config['first_tag_close'] = "</div>";
+	$config['last_tag_open'] = "<div class='last'>";
+	$config['last_tag_close'] = "</div>";
+	$config['num_links'] = 3;

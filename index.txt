@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Denise Hills - "A Mother's Voice for Every Child"    </title>
+    <link href="/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="/css/960_12_col.css" type="text/css" rel="stylesheet">
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+        <script src='/js/jquery-1.10.1.min.js' type='text/javascript'></script>
+
+</head>
+<body>
+<div id="header-bg"></div>
+<div class="container_12" >
+    <div class="grid_12" id="header">
+        <div id="header-nav"><ul></ul></div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="container_12">
+    <div class="grid_12" id="page">
+        <div class="grid_8 alpha" id="home1">
+            <div class="padding_20"><h1>A Letter From Denise</h1>Our children's education is an investment not only in their future, but ours as well. Children do not have a voice in the electoral process, so we have a responsibility to speak up for what's best for them.<br><br>A strong foundation in core skills, such as reading, math, science, and civics, is essential to success. "Learning to read" in early grades should progress to "reading to learn" in later grades. The critical thinking skills gained through science, technology, and math education are key to effective problem-solving in later life. Whether our public schools are preparing students for employment immediately after graduation, or for further education at a college or university, or for additional vocational training, the foundations built through an effective public education ensure the success and vitality of our community.<br><br>When we came to Tuscaloosa in 2003, I had not heard positive things about the city schools. I was concerned when my oldest child started Kindergarten that he would not gain the skills necessary to succeed. Therefore, I decided that my mission should be ensuring not only success for my child, but for all children in the Tuscaloosa City Schools. <br><br>I have been a member of the PTA at the schools my children attend, and joined the PTA board. After attending a national PTA conference, I became inspired to volunteer for the Tuscaloosa City PTA Council, where I quickly became president, and also served on the Alabama State PTA Board. I was in this position for the April 27, 2011, tornado, and was grateful to the outpouring of support from across the nation. I was able to pass this support on to affected students and families throughout the city. I attended numerous Board of Education meetings throughout this time, and was impressed with how the BOE came together to speak for all the children throughout the city.<br><br>I have been amazed at the difference I have seen within the schools in the past few years, particularly since the BOE hired our new superintendent. Teachers seem to have faith that the BOE and the superintendent will support them in what's best for our children. Does this mean the work is done? Far from it! I see the hard work and dedication of the BOE in the past few years as the beginning of a long journey. It takes time to change a mindset, but we are on that path. We need to continue to speak for our children, for their future and ours.</div>
+        </div>
+        <div class="grid_4 omega" id="home2"><img src="http://denisehills/images/denise_hills_and_family.jpg" width="298" height="385" alt="Denise Hills &amp; Family"></div>
+    </div>
+</div>
+
+<div class="clear"></div>
+<div class="container_12">
+    <div class="grid_12" id="footer">
+        <div id="footer_left" class="grid_4 alpha">
+            <div class="padding_10"><h3>Contact Our Campaign</h3>
+<ul>
+<li><div class="icon location">Friends of Denise Hills<br>14 Sherwood Drive<br>Tuscaloosa Alabama&nbsp;35401</div></li>
+<li><div class="icon email"><a href="mailto: info@electdenisehills.com">info@electdenisehills.com</a></div></li>
+</ul></div>
+        </div>
+        <div id="footer_middle" class="grid_4">
+            <div class="padding_10"><h3>Send Us a Message</h3><form action="http://denisehills/pages/email_form" method="post" accept-charset="utf-8">
+<input type="hidden" name="email" value="info@electdenisehills.com" />
+
+<input type="hidden" name="page_id" value="1" />
+
+<input type="hidden" name="form_id" value="1" />
+<fieldset>
+<legend>Send Us A Message</legend>
+<label for="1">Your Name</label><input type="text" name="1" value=""  /><br /><br /><label for="2">Your E-mail Address</label><input type="text" name="2" value=""  /><br /><br /><label for="3">Your Message to Us</label><textarea name="3" cols="70" rows="10" ></textarea><br /><br /><input type="submit" name="submit" value="Send" class='submit' /></fieldset></form></div>
+        </div>
+        <div id="footer_right" class="grid_4 omega">
+            <div class="padding_10"><h3>Find Us On the Web...</h3><ul>
+<li><div class="icon facebook"><a href="https://www.facebook.com/DeniseHills.TCS.BOE" target="_blank">Facebook</a></div></li>
+<li><div class="icon twitter"><a href="https://twitter.com/DeniseHills4BOE" target="_blank">Twitter @DeniseHills4BOE</a></div></li>
+</ul></div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<script type='text/javascript'>
+$(document).ready(function() {
+    $('#footer form :input').not('.submit').each(function(index,field) {
+        var fieldName = field.getAttribute('name');
+        if (!$.isNumeric(fieldName))
+        {
+            return true;
+        }
+        var label = $("label[for='" + fieldName + "']").text();
+        if ($(field).is('input'))
+        {
+            $(field).attr('value', label);
+        }
+        else if ($(field).is('textarea'))
+        {
+            $(field).text(label);
+        }
+
+        //alert("Fieldname: " + fieldName + ", label: " + label)
+    });
+
+    $('#footer form :input').focus(function(){
+        if ($(this).is('input'))
+        {
+            $(this).attr('value', '');
+        }
+        else if ($(this).is('textarea'))
+        {
+            $(this).text('');
+        }
+    });
+
+});
+</script>
+
+
+</body>
+</html>
