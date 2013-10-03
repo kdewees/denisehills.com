@@ -41,12 +41,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-//$db['default']['hostname'] = 'denisehills.db.8021733.hostedresource.com';
-$db['default']['username'] = 'denisehills';
-$db['default']['password'] = 'Ar1anaLe1gh';
-//$db['default']['password'] = 'Ar1anaLe1gh!';
-$db['default']['database'] = 'denisehills';
+//$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = 'electdenisehills.db.8021733.hostedresource.com';
+$db['default']['username'] = 'electdenisehills';
+$db['default']['password'] = 'Ar1anaLe1gh!';
+$db['default']['database'] = 'electdenisehills';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
