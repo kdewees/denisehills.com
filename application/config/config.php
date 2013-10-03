@@ -14,8 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://denisehills/';
-//$config['base_url']	= 'http://electdenisehills.com';
+//$config['base_url']	= 'http://denisehills/';
+$config['base_url']	= 'http://electdenisehills.com';
 
 /*
 |--------------------------------------------------------------------------
